@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css\styles.css">
+    <title>Catálogo E-Commerce</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="img\logo.webp" alt="Logo de tu empresa">
+        </div>
+        <div class="cart-button">
+            <a href="#">Carrito</a>
+        </div>
+    </header>
+    
+    <section class="body-content">
+        <h1>Catálogo de Productos</h1>
+
+         <!-- Controles para ordenar y filtrar -->
+        <div class="controls">
+            <button id="ordenar-precio-asc">Ordenar por precio: (Ascendente)</button>
+            <button id="ordenar-precio-desc">Ordenar por precio: (Descendente)</button>
+            <select id="filtrar-categoria">
+                <option value="">Todas las categorías</option>
+                <!-- Las opciones se llenarán dinámicamente -->
+            </select>
+        </div>
+
+        <section class="agregar-producto">
+            <h2>Agregar Producto</h2>
+            <form id="formulario-agregar-producto">
+                <div class="button-container">
+                <input type="text" id="producto-titulo" class="styled-input" placeholder="Título" required>
+                <input type="number" id="producto-precio" class="styled-input" placeholder="Precio" required>
+                <textarea id="producto-descripcion" class="styled-textarea" placeholder="Descripción" required></textarea>
+                <select id="producto-categoria" class="styled-select" required>
+                    <!-- Las opciones se llenarán dinámicamente desde la API -->
+                </select>
+                <input type="text" id="producto-imagen" class="styled-input" placeholder="URL de la imagen" required>
+                <button type="submit" class="styled-button">Agregar</button>
+                </div>
+            </form>
+        </section>
+
+
+        <div id="product-container">
+            <!-- Los productos se añadirán aquí dinámicamente -->
+        </div>
+    </section>
+
+
+
+    <script src="js/script.js"></script>
+</body>
+</html>

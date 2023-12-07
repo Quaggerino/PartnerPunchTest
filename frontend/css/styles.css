@@ -1,0 +1,236 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Estilos para el header */
+header {
+    background-color: rgba(255, 255, 255, 0.7);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+    color: #fff; 
+    width: 100%;
+    max-width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.logo img {
+    width: 60px; 
+    height: auto;
+    margin-left: 60px;
+}
+
+.cart-button a {
+    background-color: #ff6600;
+    color: #fff; 
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-right: 60px;
+}
+
+/* Estilos para el cuerpo */
+.body-content {
+    padding: 20px;
+    width: 100%;
+    max-width: 1200px; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: auto;
+}
+
+
+/* Estilos para el contenedor de productos */
+#product-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 20px; 
+    padding: 20px;
+    width: 100%;
+    max-width: 1200px; 
+    margin: auto;
+}
+
+/* Estilos para cada producto */
+.product {
+    background-color: rgba(255, 255, 255, 0.7);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+    border-radius: 5px;
+    overflow: hidden;
+    text-align: center;
+    backdrop-filter: blur(10px);
+}
+
+.product img {
+    width: 100%;
+    height: auto;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.product h3 {
+    color: #333;
+    margin-top: 10px;
+}
+
+.product p {
+    margin: 10px 0;
+    color: #555;
+}
+
+button {
+    margin-bottom: 25px;
+    margin-top: 10px;
+}
+
+
+/* Estilos para los campos de texto y el textarea */
+
+.button-container {
+    display: flex;
+    justify-content: space-between; 
+}
+
+.styled-input,
+.styled-textarea {
+    margin: 20px;
+    width: 100%;
+    padding: 12px; 
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    color: #333333;
+    font-size: 16px;
+    box-sizing: border-box;
+    transition: border-color 0.3s, box-shadow 0.3s; 
+    height: 50px; 
+
+    /* Sombras suaves al enfocar */
+    &:focus {
+        border-color: #041C4C;
+        box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        outline: none; 
+    }
+}
+
+/* Estilos para el select */
+.styled-select {
+    margin: 20px;
+    width: 100%;
+    padding: 12px; 
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    color: #333333;
+    font-size: 16px;
+    box-sizing: border-box;
+    transition: border-color 0.3s, box-shadow 0.3s;
+    height: 50px; 
+
+    /* Sombras suaves al enfocar */
+    &:focus {
+        border-color: #041C4C;
+        box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        outline: none;
+    }
+}
+
+
+
+/* Estilos para el botón */
+.styled-button {
+    margin: 10px;
+    font-family: "Montserrat", Sans-serif;
+    font-size: 18px;
+    background-color: #041C4C; 
+    color: #ffffff; 
+    padding: 10px 20px; 
+    border: none; 
+    border-radius: 8px;
+    cursor: pointer; 
+    transition: background-color 0.3s, transform 0.2s; 
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    border: 3px solid #041C4C;
+    text-decoration: none;
+    height: 50px; 
+    margin-top: 20px; 
+}
+
+/* Estilos para el botón al pasar el mouse */
+.styled-button:hover {
+    background-color: #ff6600; 
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); 
+    font-size: 18px;
+}
+
+/* Estilos para el botón al hacer clic */
+.styled-button:active {
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); 
+}
+
+/* Estilos para el botón al enfocar */
+.styled-button:focus {
+    outline: none; 
+}
+
+
+
+
+/* Estilos para los botones y el select */
+.controls button,
+.controls select {
+    margin: 20px;
+    width: 100%;
+    padding: 12px; 
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    color: #333333;
+    font-size: 16px;
+    box-sizing: border-box;
+    transition: border-color 0.3s, box-shadow 0.3s; 
+    height: 50px; 
+
+    /* Sombras suaves al enfocar */
+    &:focus {
+        border-color: #041C4C;
+        box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        outline: none; 
+    }
+}
+
+/* Estilos para los botones */
+.controls button {
+    background-color: #041C4C; 
+    color: #ffffff; 
+    cursor: pointer; 
+    transition: background-color 0.3s, transform 0.2s; 
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); 
+    border: 3px solid #041C4C;
+    text-decoration: none;
+    margin-top: 20px; 
+}
+
+/* Estilos para el botón al pasar el mouse */
+.controls button:hover {
+    background-color: #ff6600; 
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); 
+    font-size: 18px;
+}
+
+/* Estilos para el botón al hacer clic */
+.controls button:active {
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos para el botón al enfocar */
+.controls button:focus {
+    outline: none; 
+}
